@@ -1,3 +1,6 @@
+[MainWindow]
+StatusBar=Disabled
+
 [General]
 Background_file=/usr/share/kde4/apps/kmahjongglib/backgrounds/default.desktop
 Layout_file=/usr/share/kde4/apps/kmahjongg/layouts/default.desktop

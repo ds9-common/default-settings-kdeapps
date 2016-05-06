@@ -172,3 +172,4 @@ Comment[zh_TW]=Konsole 預設設定檔
 
 [Appearance]
 ColorScheme=Karbonate
+Font=DejaVu Sans Mono,11,-1,5,50,0,0,0,0,0
