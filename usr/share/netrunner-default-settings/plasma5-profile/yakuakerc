@@ -4,6 +4,7 @@ Frames=10
 [Appearance]
 BackgroundColorOpacity=70
 Translucency=true
+Skin=legacy
 
 [Behavior]
 OpenAfterStart=false
@@ -16,6 +17,7 @@ ShowPopup=false
 Favorites=
 
 [Window]
-Height=60
+Height=50
 KeepOpen=false
 Width=90
+
