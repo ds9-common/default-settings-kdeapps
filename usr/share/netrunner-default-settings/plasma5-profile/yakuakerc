@@ -4,7 +4,7 @@ Frames=10
 [Appearance]
 BackgroundColorOpacity=70
 Translucency=true
-Skin=legacy
+Skin=default
 
 [Behavior]
 OpenAfterStart=false
