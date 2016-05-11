@@ -171,5 +171,6 @@ Comment[zh_CN]=Konsole 默认配置
 Comment[zh_TW]=Konsole 預設設定檔
 
 [Appearance]
+BoldIntense=false
 ColorScheme=Karbonate
 Font=DejaVu Sans Mono,12,-1,5,50,0,0,0,0,0
