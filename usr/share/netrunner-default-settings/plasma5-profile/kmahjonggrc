@@ -1,0 +1,7 @@
+[MainWindow]
+StatusBar=Disabled
+
+[General]
+Background_file=/usr/share/kmahjongglib/backgrounds/default.desktop
+Layout_file=/usr/share/kmahjongg/layouts/default.desktop
+Tileset_file=/usr/share/kmahjongglib/tilesets/traditional.desktop
