@@ -2,6 +2,6 @@
 StatusBar=Disabled
 
 [General]
-Background_file=/usr/share/kmahjongglib/backgrounds/default.desktop
+Background_file=/usr/share/kmahjongglib/backgrounds/egyptian.desktop
 Layout_file=/usr/share/kmahjongg/layouts/default.desktop
 Tileset_file=/usr/share/kmahjongglib/tilesets/traditional.desktop
