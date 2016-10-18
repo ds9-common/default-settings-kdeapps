@@ -16,6 +16,9 @@ quitLongitude=-0.473104682860671
 quitRange=13956011.4959423
 projection=2
 
+[Navigation]
+inertialEarthRotation=false
+
 [Routing Profiles]
 Num=4
 
