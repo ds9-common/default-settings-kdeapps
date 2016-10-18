@@ -316,3 +316,6 @@ visible=true
 [plugin_scalebar]
 enabled=false
 visible=true
+
+[Navigation]
+inertialEarthRotation=false
