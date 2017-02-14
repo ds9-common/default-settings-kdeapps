@@ -165,6 +165,5 @@
   <Action name="edit_copy" priority="0"/>
   <Action name="edit_paste" priority="0"/>
   <Action name="reload" priority="0"/>
-  <Action name="show_hidden_files" icon="security-low"/>
  </ActionProperties>
 </kpartgui>
