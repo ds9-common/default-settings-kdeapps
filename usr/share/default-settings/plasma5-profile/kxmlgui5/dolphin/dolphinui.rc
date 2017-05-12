@@ -1,5 +1,5 @@
 <!DOCTYPE kpartgui>
-<kpartgui name="dolphin" version="14" translationDomain="kxmlgui5">
+<kpartgui name="dolphin" version="15" translationDomain="kxmlgui5">
  <MenuBar alreadyVisited="1">
   <Menu name="file" alreadyVisited="1" noMerge="1">
    <text translationDomain="kxmlgui5">&amp;File</text>
@@ -11,7 +11,7 @@
    <Separator/>
    <Action name="rename"/>
    <Action name="move_to_trash"/>
-   <Action name="delete"/>
+   <Action name="deletefile"/>
    <Separator/>
    <Action name="properties"/>
    <Separator weakSeparator="1"/>
@@ -111,7 +111,7 @@
   <Action name="split_view"/>
   <Separator name="separator_2"/>
   <Action name="create_dir"/>
-  <Action name="delete"/>
+  <Action name="deletefile"/>
   <Action name="reload"/>
  </ToolBar>
  <State name="new_file">
@@ -122,7 +122,7 @@
    <Action name="edit_copy"/>
    <Action name="rename"/>
    <Action name="move_to_trash"/>
-   <Action name="delete"/>
+   <Action name="deletefile"/>
    <Action name="invert_selection"/>
    <Separator/>
    <Action name="go_back"/>
@@ -135,7 +135,7 @@
    <Action name="edit_copy"/>
    <Action name="rename"/>
    <Action name="move_to_trash"/>
-   <Action name="delete"/>
+   <Action name="deletefile"/>
    <Action name="invert_selection"/>
   </enable>
  </State>
@@ -145,7 +145,7 @@
    <Action name="edit_copy"/>
    <Action name="rename"/>
    <Action name="move_to_trash"/>
-   <Action name="delete"/>
+   <Action name="deletefile"/>
    <Action name="delete_shortcut"/>
    <Action name="invert_selection"/>
   </disable>
