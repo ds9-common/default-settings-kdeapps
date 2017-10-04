@@ -1,2 +1,5 @@
 [SideBar-BrowseMode]
-IsVisible=false 
+IsVisible=false
+
+[SideBar-ViewMode]
+IsVisible=false
