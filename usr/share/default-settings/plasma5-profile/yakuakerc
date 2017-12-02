@@ -7,7 +7,7 @@ Translucency=true
 Skin=default
 
 [Behavior]
-OpenAfterStart=false
+OpenAfterStart=true
 
 [Dialogs]
 FirstRun=false
