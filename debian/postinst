@@ -1,0 +1,26 @@
+#!/bin/bash
+
+set -e
+
+# Make kdesudo link to kdesu
+PLATFORM=$(uname -m)
+KDESU_PATH="/usr/lib/$PLATFORM-linux-gnu/libexec/kf5/kdesu"
+if [ -e $KDESU_PATH ]
+then
+  ln -sf $KDESU_PATH /usr/bin/kdesudo
+fi
+
+case "$1" in
+    configure)
+    ;;
+    abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+    triggered)
+    ;;
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+exit 0
