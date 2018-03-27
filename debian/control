@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 9)
 Standards-Version: 3.7.2
 
 Package: default-settings-kdeapps
-Architecture: all
+Architecture: any
 Replaces: netrunner-default-settings (<< 1.6.1)
 Breaks: netrunner-default-settings (<< 1.6.1)
 Description: Settings for KDE Apps
