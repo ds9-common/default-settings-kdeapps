@@ -2,7 +2,3 @@
 
 %:
 	dh $@
-
-override_dh_link:
-	dh_link /usr/lib/$(DEB_HOST_MULTIARCH)/libexec/kf5/kdesu /usr/bin/kdesudo
-	dh_link
