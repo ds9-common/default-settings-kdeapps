@@ -43,7 +43,7 @@
    <Action name="show_hidden_files"/>
    <Separator/>
    <Action name="split_view"/>
-   <Action name="reload"/>
+   <Action name="view_redisplay"/>
    <Action name="stop"/>
    <Separator/>
    <Action name="panels"/>
@@ -114,7 +114,7 @@
   <Separator name="separator_2"/>
   <Action name="create_dir"/>
   <Action name="deletefile"/>
-  <Action name="reload"/>
+  <Action name="view_redisplay"/>
   <Action name="show_terminal_panel"/>
  </ToolBar>
  <State name="new_file">
@@ -167,6 +167,6 @@
   <Action priority="0" name="edit_cut"/>
   <Action priority="0" name="edit_copy"/>
   <Action priority="0" name="edit_paste"/>
-  <Action priority="0" name="reload"/>
+  <Action priority="0" name="view_redisplay"/>
  </ActionProperties>
 </gui>
