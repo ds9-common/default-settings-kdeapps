@@ -1,8 +1,0 @@
-[Misc]
-version=9
-
-[Show]
-kfileitem#group=false
-kfileitem#owner=true
-kfileitem#permissions=true
-rating=false
