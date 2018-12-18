@@ -166,5 +166,6 @@
   <Action group="file_operations" name="file_save_as"/>
   <Action group="edit_operations" name="edit_undo"/>
   <Action group="edit_operations" name="edit_redo"/>
+  <Action name="edit_find"/>
  </ToolBar>
 </gui>
