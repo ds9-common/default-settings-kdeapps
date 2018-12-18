@@ -1,0 +1,153 @@
+<!DOCTYPE gui>
+<gui version="6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="kmahjongg" translationDomain="kxmlgui5" xsi:schemaLocation="http://www.kde.org/standards/kxmlgui/1.0&#xa;                         http://www.kde.org/standards/kxmlgui/1.0/kxmlgui.xsd" xmlns="http://www.kde.org/standards/kxmlgui/1.0">
+ <MenuBar alreadyVisited="1">
+  <Menu noMerge="1" alreadyVisited="1" name="game">
+   <text translationDomain="kxmlgui5">&amp;Game</text>
+   <Action name="game_new"/>
+   <Action name="game_load"/>
+   <Action name="game_restart"/>
+   <Action name="game_new_numeric" append="new_merge"/>
+   <Separator weakSeparator="1"/>
+   <Action name="game_save"/>
+   <Separator weakSeparator="1"/>
+   <Action name="game_pause"/>
+   <Action name="game_highscores"/>
+   <Separator weakSeparator="1"/>
+   <Action name="game_board_editor"/>
+   <Separator weakSeparator="1"/>
+   <Action name="game_quit"/>
+  </Menu>
+  <Menu noMerge="1" alreadyVisited="1" name="move">
+   <text translationDomain="kxmlgui5" context="@title:menu Game move">&amp;Move</text>
+   <Action name="move_undo"/>
+   <Action name="move_redo"/>
+   <Separator weakSeparator="1"/>
+   <Action name="move_hint"/>
+   <Action name="move_demo"/>
+   <Separator weakSeparator="1"/>
+   <Action name="move_shuffle"/>
+  </Menu>
+  <Menu noMerge="1" alreadyVisited="1" name="view">
+   <text translationDomain="kxmlgui5">&amp;View</text>
+   <Action name="view_anglecw"/>
+   <Action name="view_angleccw"/>
+  </Menu>
+  <Separator weakSeparator="1"/>
+  <Menu noMerge="1" alreadyVisited="1" name="settings">
+   <text translationDomain="kxmlgui5">&amp;Settings</text>
+   <Merge name="StandardToolBarMenuHandler"/>
+   <Merge name="KMDIViewActions"/>
+   <Action name="options_show_statusbar"/>
+   <Separator weakSeparator="1"/>
+   <Action name="options_configure_keybinding"/>
+   <Action name="options_configure_toolbars"/>
+   <Action name="options_configure"/>
+  </Menu>
+  <Separator weakSeparator="1"/>
+  <Menu noMerge="1" alreadyVisited="1" name="help">
+   <text translationDomain="kxmlgui5">&amp;Help</text>
+   <Action name="help_contents"/>
+   <Action name="help_whats_this"/>
+   <Separator weakSeparator="1"/>
+   <Action name="help_report_bug"/>
+   <Separator weakSeparator="1"/>
+   <Action name="help_donate"/>
+   <Separator weakSeparator="1"/>
+   <Action name="switch_application_language"/>
+   <Separator weakSeparator="1"/>
+   <Action name="help_about_app"/>
+   <Action name="help_about_kde"/>
+  </Menu>
+ </MenuBar>
+ <ToolBar noMerge="1" alreadyVisited="1" name="mainToolBar">
+  <text translationDomain="kmahjongg">Main Toolbar</text>
+  <Action name="game_new"/>
+  <Action name="game_load"/>
+  <Action name="game_save"/>
+  <Action name="move_undo"/>
+  <Action name="move_redo"/>
+  <Action name="game_pause"/>
+  <Action name="move_hint"/>
+ </ToolBar>
+ <State name="gameplay_state">
+  <enable>
+   <Action name="game_new"/>
+   <Action name="game_new_numeric"/>
+   <Action name="game_load"/>
+   <Action name="game_save"/>
+   <Action name="game_highscores"/>
+   <Action name="move_hint"/>
+   <Action name="game_pause"/>
+   <Action name="move_demo"/>
+   <Action name="view_angle"/>
+  </enable>
+ </State>
+ <State name="demo_state">
+  <enable>
+   <Action name="move_demo"/>
+  </enable>
+  <disable>
+   <Action name="game_new"/>
+   <Action name="game_new_numeric"/>
+   <Action name="game_load"/>
+   <Action name="game_save"/>
+   <Action name="game_highscores"/>
+   <Action name="move_hint"/>
+   <Action name="game_pause"/>
+   <Action name="move_undo"/>
+   <Action name="move_redo"/>
+   <Action name="view_angle"/>
+  </disable>
+ </State>
+ <State name="paused_state">
+  <enable>
+   <Action name="game_pause"/>
+  </enable>
+  <disable>
+   <Action name="game_new"/>
+   <Action name="game_new_numeric"/>
+   <Action name="game_load"/>
+   <Action name="game_save"/>
+   <Action name="game_highscores"/>
+   <Action name="move_hint"/>
+   <Action name="move_undo"/>
+   <Action name="move_redo"/>
+   <Action name="move_demo"/>
+   <Action name="view_angle"/>
+  </disable>
+ </State>
+ <State name="finished_state">
+  <disable>
+   <Action name="move_undo"/>
+   <Action name="move_redo"/>
+   <Action name="move_demo"/>
+   <Action name="move_hint"/>
+   <Action name="game_save"/>
+   <Action name="game_pause"/>
+   <Action name="game_load"/>
+   <Action name="view_angle"/>
+  </disable>
+  <enable>
+   <Action name="game_new"/>
+   <Action name="game_new_numeric"/>
+   <Action name="game_highscores"/>
+  </enable>
+ </State>
+ <State name="stuck_state">
+  <disable>
+   <Action name="move_redo"/>
+   <Action name="move_demo"/>
+   <Action name="move_hint"/>
+   <Action name="game_pause"/>
+  </disable>
+  <enable>
+   <Action name="view_angle"/>
+   <Action name="game_save"/>
+   <Action name="game_load"/>
+   <Action name="move_undo"/>
+   <Action name="game_new"/>
+   <Action name="game_new_numeric"/>
+   <Action name="game_highscores"/>
+  </enable>
+ </State>
+</gui>
