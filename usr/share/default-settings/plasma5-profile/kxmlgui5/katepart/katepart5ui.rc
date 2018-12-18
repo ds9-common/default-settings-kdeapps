@@ -1,5 +1,5 @@
 <!DOCTYPE gui>
-<gui translationDomain="ktexteditor5" version="78" name="KatePartView">
+<gui translationDomain="ktexteditor5" version="9999" name="KatePartView">
  <MenuBar>
   <Menu noMerge="1" name="file">
    <text translationDomain="ktexteditor5">&amp;File</text>
