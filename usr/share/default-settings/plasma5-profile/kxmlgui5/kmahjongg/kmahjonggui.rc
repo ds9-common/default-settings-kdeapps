@@ -1,5 +1,5 @@
 <!DOCTYPE gui>
-<gui version="6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="kmahjongg" translationDomain="kxmlgui5" xsi:schemaLocation="http://www.kde.org/standards/kxmlgui/1.0&#xa;                         http://www.kde.org/standards/kxmlgui/1.0/kxmlgui.xsd" xmlns="http://www.kde.org/standards/kxmlgui/1.0">
+<gui version="9999" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="kmahjongg" translationDomain="kxmlgui5" xsi:schemaLocation="http://www.kde.org/standards/kxmlgui/1.0&#xa;                         http://www.kde.org/standards/kxmlgui/1.0/kxmlgui.xsd" xmlns="http://www.kde.org/standards/kxmlgui/1.0">
  <MenuBar alreadyVisited="1">
   <Menu noMerge="1" alreadyVisited="1" name="game">
    <text translationDomain="kxmlgui5">&amp;Game</text>
@@ -33,6 +33,7 @@
    <Action name="view_angleccw"/>
   </Menu>
   <Separator weakSeparator="1"/>
+  <Separator weakSeparator="1"/>
   <Menu noMerge="1" alreadyVisited="1" name="settings">
    <text translationDomain="kxmlgui5">&amp;Settings</text>
    <Merge name="StandardToolBarMenuHandler"/>
@@ -62,8 +63,6 @@
  <ToolBar noMerge="1" alreadyVisited="1" name="mainToolBar">
   <text translationDomain="kmahjongg">Main Toolbar</text>
   <Action name="game_new"/>
-  <Action name="game_load"/>
-  <Action name="game_save"/>
   <Action name="move_undo"/>
   <Action name="move_redo"/>
   <Action name="game_pause"/>
