@@ -2,5 +2,6 @@
 last-saved-to[$e]=$HOME/Pictures
 
 [GuiConfig]
+includePointer=false
 lastUsedSaveMode=1
 quitAfterSaveCopyExport=true 
